@@ -1,0 +1,964 @@
+[gd_scene load_steps=33 format=2]
+
+[ext_resource path="res://NimbusRomNo9L-Med.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://AbhayaLibre-Regular.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://Pages/facts.gd" type="Script" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="CanvasItemMaterial" id=2]
+blend_mode = 1
+
+[sub_resource type="DynamicFont" id=3]
+size = 35
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="CanvasItemMaterial" id=4]
+blend_mode = 1
+
+[sub_resource type="CanvasItemMaterial" id=27]
+blend_mode = 1
+
+[sub_resource type="DynamicFont" id=28]
+size = 35
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=29]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=8]
+
+[sub_resource type="DynamicFont" id=6]
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 20
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=10]
+size = 30
+font_data = ExtResource( 1 )
+
+[sub_resource type="CanvasItemMaterial" id=11]
+blend_mode = 2
+
+[sub_resource type="DynamicFont" id=12]
+size = 25
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=13]
+size = 63
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.392157, 0.372549, 0.894118, 1 )
+
+[sub_resource type="StyleBoxFlat" id=15]
+bg_color = Color( 0.180392, 0.415686, 0.627451, 1 )
+
+[sub_resource type="StyleBoxFlat" id=16]
+bg_color = Color( 0.129412, 0.270588, 0.572549, 1 )
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 0.243137, 0.541176, 0.588235, 1 )
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0.203922, 0.254902, 0.447059, 1 )
+
+[sub_resource type="DynamicFont" id=24]
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=19]
+size = 25
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=20]
+size = 34
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=22]
+size = 28
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=23]
+size = 28
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=21]
+size = 28
+use_filter = true
+font_data = ExtResource( 2 )
+
+[sub_resource type="StyleBoxFlat" id=25]
+bg_color = Color( 0.14902, 0.180392, 0.235294, 1 )
+
+[sub_resource type="GDScript" id=26]
+resource_name = "object_script"
+script/source = "extends Button
+export var pret=\"0\"
+"
+
+[sub_resource type="StyleBoxFlat" id=30]
+
+[sub_resource type="DynamicFont" id=31]
+size = 32
+font_data = ExtResource( 2 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+
+[node name="Buttons" type="ColorRect" parent="."]
+anchor_right = 1.0
+margin_bottom = 75.0
+color = Color( 0.180392, 0.345098, 0.996078, 1 )
+
+[node name="Panel" type="Panel" parent="Buttons"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 1 )
+
+[node name="fact" type="Button" parent="Buttons/Panel"]
+material = SubResource( 2 )
+anchor_right = 0.195
+anchor_bottom = 1.0
+margin_right = 0.319992
+custom_fonts/font = SubResource( 3 )
+text = "Facturare"
+
+[node name="stoc" type="Button" parent="Buttons/Panel"]
+material = SubResource( 4 )
+anchor_left = 0.195
+anchor_right = 0.391
+anchor_bottom = 1.0
+margin_left = 0.319992
+margin_right = -0.384033
+custom_fonts/font = SubResource( 3 )
+text = "Stocuri"
+
+[node name="setari" type="Button" parent="Buttons/Panel"]
+material = SubResource( 27 )
+anchor_left = 0.805
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.320068
+custom_fonts/font = SubResource( 28 )
+text = "Setări"
+
+[node name="DATE_FIRMA" type="Label" parent="Buttons"]
+anchor_left = 0.391
+anchor_top = 0.013
+anchor_right = 0.805
+anchor_bottom = 0.96
+margin_left = -0.384033
+margin_top = 7.025
+margin_right = -0.320068
+custom_fonts/font = SubResource( 29 )
+text = "FIRMA"
+align = 1
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.014
+anchor_top = 0.158
+anchor_right = 0.772
+anchor_bottom = 0.988
+margin_left = 2.664
+margin_top = -1.8
+margin_right = 3.47198
+margin_bottom = -1.80005
+custom_styles/panel = SubResource( 8 )
+
+[node name="Nume" type="Label" parent="Panel"]
+anchor_left = 0.069
+anchor_top = 0.169
+anchor_right = 0.409
+anchor_bottom = 0.231
+margin_left = 0.386997
+margin_top = -0.161995
+margin_right = 0.207001
+margin_bottom = -0.0379868
+rect_pivot_offset = Vector2( -211, 78 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Nume:"
+valign = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel/Nume"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 57.0
+margin_right = 1.0
+custom_fonts/font = SubResource( 7 )
+
+[node name="Adresa" type="Label" parent="Panel"]
+anchor_left = 0.067
+anchor_top = 0.257
+anchor_right = 0.407
+anchor_bottom = 0.319
+margin_left = 1.941
+margin_top = 0.0140152
+margin_right = 1.76099
+margin_bottom = 0.138016
+rect_pivot_offset = Vector2( -211, 78 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Adresă:"
+valign = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel/Adresa"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 57.0
+margin_right = 1.0
+custom_fonts/font = SubResource( 7 )
+
+[node name="Judet" type="Label" parent="Panel"]
+anchor_left = 0.068
+anchor_top = 0.337
+anchor_right = 0.408
+anchor_bottom = 0.4
+margin_left = 1.164
+margin_top = 0.174011
+margin_right = 0.983978
+margin_bottom = -0.199982
+rect_pivot_offset = Vector2( -211, 78 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Județ:"
+valign = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel/Judet"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 56.0
+custom_fonts/font = SubResource( 7 )
+
+[node name="Localitate" type="Label" parent="Panel"]
+anchor_left = 0.066
+anchor_top = 0.416
+anchor_right = 0.405
+anchor_bottom = 0.478
+margin_left = -15.282
+margin_top = -0.167984
+margin_right = 2.315
+margin_bottom = -0.0439606
+rect_pivot_offset = Vector2( -211, 78 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Localitate:"
+valign = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel/Localitate"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 75.0
+margin_right = 2.0
+custom_fonts/font = SubResource( 7 )
+
+[node name="Tara" type="Label" parent="Panel"]
+anchor_left = 0.069
+anchor_top = 0.506
+anchor_right = 0.409
+anchor_bottom = 0.568
+margin_left = -1.613
+margin_top = 0.0120392
+margin_right = 0.207001
+margin_bottom = 0.136017
+rect_pivot_offset = Vector2( -211, 78 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Țară:"
+valign = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel/Tara"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 59.0
+margin_right = 1.0
+custom_fonts/font = SubResource( 7 )
+text = "Romania"
+
+[node name="Iban" type="Label" parent="Panel"]
+anchor_left = 0.06
+anchor_top = 0.781
+anchor_right = 0.413
+anchor_bottom = 0.843
+margin_left = 0.379997
+margin_top = 0.0620422
+margin_right = 0.098999
+margin_bottom = 0.186035
+rect_pivot_offset = Vector2( -211, 78 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "iban:"
+valign = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel/Iban"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 64.0
+custom_fonts/font = SubResource( 7 )
+
+[node name="Banca" type="Label" parent="Panel"]
+anchor_left = 0.066
+anchor_top = 0.695
+anchor_right = 0.405
+anchor_bottom = 0.757
+margin_left = -0.282001
+margin_top = -0.109985
+margin_right = 0.314972
+margin_bottom = 0.0140381
+rect_pivot_offset = Vector2( -211, 78 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Bancă:"
+valign = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel/Banca"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 60.0
+margin_right = 4.00003
+margin_bottom = -3.05176e-05
+custom_fonts/font = SubResource( 7 )
+
+[node name="Telefon" type="Label" parent="Panel"]
+anchor_left = 0.067
+anchor_top = 0.604
+anchor_right = 0.412
+anchor_bottom = 0.667
+margin_left = -13.059
+margin_top = 0.208038
+margin_right = -0.123993
+margin_bottom = -0.165955
+rect_pivot_offset = Vector2( -211, 78 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Telefon:"
+valign = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel/Telefon"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 72.0
+margin_right = -1.0
+custom_fonts/font = SubResource( 7 )
+
+[node name="Cod_fiscal" type="Label" parent="Panel"]
+anchor_left = 0.538
+anchor_top = 0.165
+anchor_right = 0.858
+anchor_bottom = 0.231
+margin_left = -0.0260315
+margin_top = -0.169991
+margin_right = 0.333984
+margin_bottom = -2.03799
+rect_pivot_offset = Vector2( 108, 0 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Cod fiscal:"
+valign = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel/Cod_fiscal"]
+anchor_right = 1.048
+anchor_bottom = 1.0
+margin_left = 72.0
+margin_right = 0.0480042
+custom_fonts/font = SubResource( 7 )
+
+[node name="Reg_comert" type="Label" parent="Panel"]
+anchor_left = 0.535
+anchor_top = 0.243
+anchor_right = 0.875
+anchor_bottom = 0.305
+margin_left = 0.304993
+margin_top = -0.0139923
+margin_right = 0.124939
+margin_bottom = 0.110016
+rect_pivot_offset = Vector2( 108, 0 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Registrul comerțului:"
+valign = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel/Reg_comert"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 147.0
+margin_right = -0.999939
+custom_fonts/font = SubResource( 7 )
+
+[node name="Cod_client" type="Label" parent="Panel"]
+anchor_left = 0.534
+anchor_top = 0.325
+anchor_right = 0.874
+anchor_bottom = 0.388
+margin_left = 0.0819702
+margin_top = 0.150009
+margin_right = -0.0980225
+margin_bottom = -0.223984
+rect_pivot_offset = Vector2( 108, 0 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Cod client:"
+valign = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel/Cod_client"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 81.0
+margin_right = -3.05176e-05
+margin_bottom = -1.52588e-05
+custom_fonts/font = SubResource( 7 )
+
+[node name="Email" type="Label" parent="Panel"]
+anchor_left = 0.537
+anchor_top = 0.412
+anchor_right = 0.876
+anchor_bottom = 0.474
+margin_left = -0.248993
+margin_top = -0.175995
+margin_right = 0.347961
+margin_bottom = -0.0519867
+rect_pivot_offset = Vector2( 108, 0 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Email:"
+valign = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel/Email"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 59.0
+margin_right = -1.99994
+custom_fonts/font = SubResource( 7 )
+
+[node name="Titlu" type="Label" parent="Panel"]
+anchor_left = 0.021
+anchor_top = 0.022
+anchor_right = 0.131
+anchor_bottom = 0.084
+margin_left = -0.317001
+margin_top = 0.0440006
+margin_right = 0.21299
+margin_bottom = 0.168003
+custom_fonts/font = SubResource( 10 )
+text = "Client"
+
+[node name="Continua" type="Button" parent="Panel"]
+material = SubResource( 11 )
+anchor_left = 0.712
+anchor_top = 0.853
+anchor_right = 0.969
+anchor_bottom = 0.954
+margin_left = -0.223999
+margin_top = 0.206024
+margin_right = 0.0869751
+margin_bottom = -0.09198
+custom_fonts/font = SubResource( 12 )
+text = "Continuă ->"
+
+[node name="Panel2" type="Panel" parent="."]
+visible = false
+anchor_left = 0.0166016
+anchor_top = 0.155
+anchor_right = 0.775391
+anchor_bottom = 0.985
+custom_styles/panel = SubResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Serie" type="Label" parent="Panel2"]
+anchor_left = 0.216
+anchor_top = 0.04
+anchor_right = 0.364
+anchor_bottom = 0.102
+margin_left = 0.167999
+margin_top = 0.0800018
+margin_right = 0.171997
+margin_bottom = 0.204002
+rect_pivot_offset = Vector2( -211, 78 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Seria:"
+valign = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel2/Serie"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 59.0
+custom_fonts/font = SubResource( 7 )
+
+[node name="Numar" type="Label" parent="Panel2"]
+anchor_left = 0.414
+anchor_top = 0.04
+anchor_right = 0.544
+anchor_bottom = 0.102
+margin_left = 0.32196
+margin_top = 0.0800018
+margin_right = 0.311981
+margin_bottom = 0.204002
+rect_pivot_offset = Vector2( -211, 78 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Număr:"
+valign = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel2/Numar"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 59.0
+custom_fonts/font = SubResource( 7 )
+
+[node name="Data" type="Label" parent="Panel2"]
+anchor_left = 0.575
+anchor_top = 0.038
+anchor_right = 0.851
+anchor_bottom = 0.102
+margin_left = 1.22498
+margin_top = 0.0760002
+margin_right = 1.77301
+margin_bottom = 0.204002
+rect_pivot_offset = Vector2( 108, 0 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 6 )
+text = "Data:"
+valign = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel2/Data"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 72.0
+margin_right = 1.0
+custom_fonts/font = SubResource( 7 )
+
+[node name="Titlu" type="Label" parent="Panel2"]
+anchor_left = 0.021
+anchor_top = 0.022
+anchor_right = 0.131
+anchor_bottom = 0.084
+margin_left = -0.317001
+margin_top = 0.0440006
+margin_right = 0.21299
+margin_bottom = 0.168003
+custom_fonts/font = SubResource( 10 )
+text = "Factură"
+
+[node name="produse" type="Label" parent="Panel2"]
+anchor_left = 0.021
+anchor_top = 0.163
+anchor_right = 0.179
+anchor_bottom = 0.225
+margin_left = 7.683
+margin_top = -0.173988
+margin_right = -0.0830078
+margin_bottom = -0.0499878
+custom_fonts/font = SubResource( 10 )
+text = "Produse:"
+
+[node name="gen_fact" type="Button" parent="Panel2"]
+material = SubResource( 11 )
+anchor_left = 0.656
+anchor_top = 0.855
+anchor_right = 0.972
+anchor_bottom = 0.956
+margin_left = 0.287994
+margin_top = 0.210052
+margin_right = -0.244019
+margin_bottom = -0.0879517
+custom_fonts/font = SubResource( 12 )
+text = "Generează Factura ->"
+
+[node name="Inapoi" type="Button" parent="Panel2"]
+material = SubResource( 11 )
+anchor_left = 0.053
+anchor_top = 0.859
+anchor_right = 0.216
+anchor_bottom = 0.956
+margin_left = -0.181004
+margin_top = 0.218048
+margin_right = 0.167999
+margin_bottom = 1.91205
+custom_fonts/font = SubResource( 12 )
+text = "<-Înapoi"
+
+[node name="Add_prodese" type="Panel" parent="Panel2"]
+anchor_left = 0.033462
+anchor_top = 0.228916
+anchor_right = 0.943372
+anchor_bottom = 0.355422
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="add" type="Button" parent="Panel2/Add_prodese"]
+anchor_left = -0.01
+anchor_top = -0.095
+anchor_right = 0.089
+anchor_bottom = 1.111
+margin_left = 0.0700006
+margin_top = -0.0149994
+margin_right = 0.0769997
+margin_bottom = 0.00699615
+custom_colors/font_color_disabled = Color( 0.478431, 0.584314, 0.827451, 1 )
+custom_colors/font_color_focus = Color( 0.364706, 0.407843, 0.698039, 1 )
+custom_colors/font_color = Color( 0.0745098, 0.435294, 0.215686, 1 )
+custom_colors/font_color_hover = Color( 0.129412, 0.380392, 0.701961, 1 )
+custom_colors/font_color_pressed = Color( 0.160784, 0.392157, 0.827451, 1 )
+custom_fonts/font = SubResource( 13 )
+custom_styles/hover = SubResource( 14 )
+custom_styles/pressed = SubResource( 15 )
+custom_styles/focus = SubResource( 16 )
+custom_styles/disabled = SubResource( 17 )
+custom_styles/normal = SubResource( 18 )
+text = "+"
+expand_icon = true
+
+[node name="Label" type="Label" parent="Panel2/Add_prodese"]
+anchor_right = 0.392
+anchor_bottom = 1.0
+margin_right = -0.144165
+margin_bottom = 2.00002
+custom_fonts/font = SubResource( 24 )
+text = "Nume produs"
+align = 1
+valign = 1
+
+[node name="Label2" type="Label" parent="Panel2/Add_prodese"]
+anchor_left = 0.392
+anchor_right = 0.573
+anchor_bottom = 1.0
+margin_left = -0.144165
+margin_right = -0.111206
+margin_bottom = 2.00002
+custom_fonts/font = SubResource( 24 )
+text = "Cantitate"
+align = 1
+valign = 1
+
+[node name="Label3" type="Label" parent="Panel2/Add_prodese"]
+anchor_left = 0.573
+anchor_right = 0.754
+anchor_bottom = 1.032
+margin_left = -0.111206
+margin_right = -0.0783081
+margin_bottom = -0.0159912
+custom_fonts/font = SubResource( 24 )
+text = "Preț/Buc"
+align = 1
+valign = 1
+
+[node name="Label4" type="Label" parent="Panel2/Add_prodese"]
+anchor_left = 0.757
+anchor_right = 0.999
+anchor_bottom = 1.0
+margin_left = -0.19928
+margin_right = -0.293396
+margin_bottom = 2.00002
+custom_fonts/font = SubResource( 24 )
+text = "Total"
+align = 1
+valign = 1
+
+[node name="ColorRect" type="ColorRect" parent="Panel2"]
+anchor_left = 0.033462
+anchor_top = 0.35743
+anchor_right = 0.943372
+anchor_bottom = 0.759036
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel2/ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_min_size = Vector2( 710, 200 )
+scroll_horizontal_enabled = false
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel2/ColorRect/ScrollContainer"]
+use_parent_material = true
+margin_right = 710.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 710, 180 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="produus" type="ColorRect" parent="Panel2"]
+anchor_left = 0.033462
+anchor_top = 0.35743
+anchor_right = 0.947233
+anchor_bottom = 0.417671
+rect_min_size = Vector2( 710, 30 )
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label" type="Label" parent="Panel2/produus"]
+anchor_right = 0.390604
+anchor_bottom = 1.0
+margin_right = -0.328995
+margin_bottom = 1.0
+custom_fonts/font = SubResource( 24 )
+text = "stae"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="Label2" type="Label" parent="Panel2/produus"]
+anchor_left = 0.39
+anchor_right = 0.57
+anchor_bottom = 1.0
+margin_left = 0.0998535
+margin_top = -1.0
+margin_right = 0.299744
+custom_fonts/font = SubResource( 24 )
+text = "tes"
+align = 1
+valign = 1
+
+[node name="Label3" type="Label" parent="Panel2/produus"]
+anchor_left = 0.57
+anchor_right = 0.751
+anchor_bottom = 1.0
+margin_left = 0.299744
+margin_top = -1.00015
+margin_right = -0.210327
+margin_bottom = -0.000152588
+custom_fonts/font = SubResource( 24 )
+text = "tes"
+align = 1
+valign = 1
+
+[node name="Label4" type="Label" parent="Panel2/produus"]
+anchor_left = 0.751
+anchor_right = 0.999
+anchor_bottom = 1.0
+margin_left = -0.210327
+margin_top = -1.0
+margin_right = -0.290405
+custom_fonts/font = SubResource( 24 )
+text = "tes"
+align = 1
+valign = 1
+
+[node name="Panel_add" type="Panel" parent="."]
+visible = false
+anchor_left = 0.780273
+anchor_top = 0.155
+anchor_right = 0.999023
+anchor_bottom = 0.985
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="close_add" type="Button" parent="Panel_add"]
+anchor_left = 0.817
+anchor_top = 0.006
+anchor_right = 0.987
+anchor_bottom = 0.092
+margin_left = -0.00801086
+margin_top = 0.0120001
+margin_right = -0.0880127
+margin_bottom = 0.183998
+text = "x"
+
+[node name="titlu" type="Label" parent="Panel_add"]
+anchor_left = 0.049
+anchor_top = 0.022
+anchor_right = 0.746
+anchor_bottom = 0.082
+margin_left = 0.0239992
+margin_top = 0.0439987
+margin_right = -0.104004
+margin_bottom = 0.163998
+custom_fonts/font = SubResource( 19 )
+text = "Adaugă produs"
+
+[node name="Produs" type="Label" parent="Panel_add"]
+anchor_left = 0.259
+anchor_top = 0.137
+anchor_right = 0.75
+anchor_bottom = 0.241
+margin_left = -0.0159988
+margin_top = -0.226006
+margin_right = -1.52588e-05
+margin_bottom = -0.0180054
+custom_fonts/font = SubResource( 20 )
+text = "Produs"
+align = 1
+valign = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel_add/Produs"]
+anchor_left = -0.261
+anchor_top = 1.0
+anchor_right = 1.287
+anchor_bottom = 1.974
+margin_left = 0.0150013
+margin_top = -2.0
+margin_right = -0.00500488
+margin_bottom = 0.0139999
+custom_fonts/font = SubResource( 22 )
+
+[node name="Cantitate" type="Label" parent="Panel_add"]
+anchor_left = 0.196
+anchor_top = 0.378
+anchor_right = 0.799
+anchor_bottom = 0.482
+margin_left = 0.0959969
+margin_top = -0.244003
+margin_right = 0.0239868
+margin_bottom = -0.0360107
+custom_fonts/font = SubResource( 20 )
+text = "Cantitate"
+align = 1
+valign = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel_add/Cantitate"]
+anchor_left = -0.111
+anchor_top = 0.963
+anchor_right = 1.096
+anchor_bottom = 1.981
+margin_left = -0.0149984
+margin_top = -0.00200272
+margin_right = 0.0399933
+margin_bottom = 0.0259933
+custom_fonts/font = SubResource( 23 )
+
+[node name="Pret" type="Label" parent="Panel_add"]
+anchor_left = 0.21
+anchor_top = 0.59
+anchor_right = 0.754
+anchor_bottom = 0.707
+margin_left = -0.0400009
+margin_top = 0.179993
+margin_right = 0.104004
+margin_bottom = -0.0859985
+custom_fonts/font = SubResource( 20 )
+text = "Preț"
+align = 1
+valign = 1
+
+[node name="TextEdit" type="TextEdit" parent="Panel_add/Pret"]
+anchor_left = -0.066
+anchor_top = 1.0
+anchor_right = 1.164
+anchor_bottom = 1.879
+margin_left = 0.052
+margin_top = 1.0
+margin_right = -0.00801086
+margin_bottom = 0.0179977
+custom_fonts/font = SubResource( 23 )
+
+[node name="Button_add" type="Button" parent="Panel_add"]
+anchor_left = 0.094
+anchor_top = 0.855
+anchor_right = 0.942
+anchor_bottom = 0.962
+margin_left = -0.0560017
+margin_top = 0.209991
+margin_right = -0.00801086
+margin_bottom = -0.0760498
+custom_fonts/font = SubResource( 21 )
+text = "Adaugă Produs"
+
+[node name="Panel" type="Panel" parent="Panel_add"]
+anchor_left = -1.013
+anchor_bottom = 0.488
+margin_left = -0.0879974
+margin_bottom = -0.0240173
+custom_styles/panel = SubResource( 25 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="Panel_add/Panel"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel_add/Panel/ScrollContainer"]
+margin_right = 227.0
+margin_bottom = 243.0
+rect_min_size = Vector2( 227, 243 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Object" type="Button" parent="Panel_add/Panel"]
+margin_right = 227.0
+margin_bottom = 30.0
+rect_min_size = Vector2( 227, 30 )
+text = "PRODUS"
+script = SubResource( 26 )
+
+[node name="item_search" type="Panel" parent="."]
+anchor_left = 0.781
+anchor_top = 0.16
+anchor_right = 0.992
+anchor_bottom = 0.973
+margin_left = 0.255981
+margin_right = 0.191956
+margin_bottom = 0.199951
+custom_styles/panel = SubResource( 30 )
+
+[node name="ScrollContainer" type="ScrollContainer" parent="item_search"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="item_search/ScrollContainer"]
+margin_right = 216.0
+margin_bottom = 488.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="item" type="Button" parent="item_search"]
+margin_right = 216.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 31 )
+
+[node name="item2" type="Button" parent="item_search"]
+margin_right = 216.0
+margin_bottom = 20.0
+custom_fonts/font = SubResource( 31 )
+
+[node name="Timer" type="Timer" parent="item_search"]
+wait_time = 0.1
+
+[connection signal="pressed" from="Buttons/Panel/fact" to="." method="_on_fact_pressed"]
+[connection signal="pressed" from="Buttons/Panel/stoc" to="." method="_on_stoc_pressed"]
+[connection signal="pressed" from="Buttons/Panel/setari" to="." method="_on_setari_pressed"]
+[connection signal="focus_exited" from="Panel/Judet/TextEdit" to="." method="judet_focus_exited"]
+[connection signal="text_changed" from="Panel/Judet/TextEdit" to="." method="textedit_judet"]
+[connection signal="focus_exited" from="Panel/Localitate/TextEdit" to="." method="localitate_focus_exited"]
+[connection signal="text_changed" from="Panel/Localitate/TextEdit" to="." method="localitate_text_changed"]
+[connection signal="pressed" from="Panel/Continua" to="." method="_on_Continua_pressed"]
+[connection signal="pressed" from="Panel2/gen_fact" to="." method="_on_gen_fact_pressed"]
+[connection signal="pressed" from="Panel2/Inapoi" to="." method="_on_Inapoi_pressed"]
+[connection signal="pressed" from="Panel2/Add_prodese/add" to="." method="_on_add_pressed"]
+[connection signal="pressed" from="Panel_add/close_add" to="." method="_on_close_add_pressed"]
+[connection signal="text_changed" from="Panel_add/Produs/TextEdit" to="." method="_on_TextEdit_text_changed"]
+[connection signal="pressed" from="Panel_add/Button_add" to="." method="_on_Button_add_pressed"]
+[connection signal="pressed" from="Panel_add/Panel/Object" to="." method="_on_Object_pressed"]
+[connection signal="pressed" from="item_search/item" to="." method="_on_item_pressed"]
+[connection signal="pressed" from="item_search/item2" to="." method="_on_item2_pressed"]

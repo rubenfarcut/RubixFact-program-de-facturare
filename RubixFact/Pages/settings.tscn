@@ -1,0 +1,573 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://NimbusRomNo9L-Med.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://Pages/settings.gd" type="Script" id=2]
+[ext_resource path="res://AbhayaLibre-Regular.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="CanvasItemMaterial" id=2]
+blend_mode = 1
+
+[sub_resource type="DynamicFont" id=3]
+size = 35
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="CanvasItemMaterial" id=4]
+blend_mode = 1
+
+[sub_resource type="DynamicFont" id=15]
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=5]
+size = 13
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0.984314, 0.984314, 0.984314, 1 )
+
+[sub_resource type="DynamicFont" id=7]
+size = 30
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=8]
+size = 18
+use_filter = true
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=9]
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0.372549, 0.501961, 0.870588, 1 )
+border_width_right = 1
+
+[sub_resource type="DynamicFont" id=11]
+font_data = ExtResource( 1 )
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0.0666667, 0.141176, 0.2, 1 )
+
+[sub_resource type="StyleBoxFlat" id=13]
+bg_color = Color( 0.407843, 0.592157, 0.796078, 1 )
+
+[sub_resource type="StyleBoxFlat" id=14]
+bg_color = Color( 0.14902, 0.478431, 0.878431, 1 )
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+
+[node name="Buttons" type="ColorRect" parent="."]
+anchor_right = 1.0
+margin_bottom = 75.0
+color = Color( 0.180392, 0.345098, 0.996078, 1 )
+
+[node name="Panel" type="Panel" parent="Buttons"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+custom_styles/panel = SubResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="facturare" type="Button" parent="Buttons/Panel"]
+material = SubResource( 2 )
+anchor_right = 0.195
+anchor_bottom = 1.0
+margin_right = 0.319992
+custom_fonts/font = SubResource( 3 )
+text = "Facturare"
+
+[node name="stocuri" type="Button" parent="Buttons/Panel"]
+material = SubResource( 4 )
+anchor_left = 0.195
+anchor_right = 0.391
+anchor_bottom = 1.0
+margin_left = 0.319992
+margin_right = -0.384033
+custom_fonts/font = SubResource( 3 )
+text = "Stocuri"
+
+[node name="setari" type="Button" parent="Buttons/Panel"]
+material = SubResource( 4 )
+anchor_left = 0.805
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.320068
+custom_fonts/font = SubResource( 3 )
+text = "Setări"
+
+[node name="DATE_FIRMA" type="Label" parent="Buttons"]
+anchor_left = 0.391
+anchor_top = 0.013
+anchor_right = 0.805
+anchor_bottom = 0.96
+margin_left = -0.384033
+margin_top = 7.025
+margin_right = -0.320068
+custom_fonts/font = SubResource( 15 )
+text = "FIRMA"
+align = 1
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.125
+anchor_top = 0.907
+anchor_right = 0.875
+anchor_bottom = 0.96
+margin_top = -0.200012
+margin_right = -6.10352e-05
+custom_fonts/font = SubResource( 5 )
+text = "
+Program realizat de compania RUBIX PAPER SRL
+CUI:45824088 Tel.(0775) 383 242"
+align = 1
+valign = 1
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.008
+anchor_top = 0.133
+anchor_right = 0.992
+anchor_bottom = 0.907
+margin_left = -0.192
+margin_top = 0.199997
+margin_right = 0.191956
+margin_bottom = -0.200012
+custom_styles/panel = SubResource( 6 )
+
+[node name="titlu" type="Label" parent="Panel"]
+anchor_left = 0.009
+anchor_top = 0.011
+anchor_right = 0.148
+anchor_bottom = 0.078
+margin_left = -0.0720005
+margin_top = -0.104001
+margin_right = -72.184
+margin_bottom = -17.192
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "Firma mea"
+
+[node name="titlu2" type="Label" parent="Panel"]
+anchor_left = 0.413
+anchor_top = 0.017
+anchor_right = 0.567
+anchor_bottom = 0.084
+margin_left = -0.304016
+margin_top = 0.112
+margin_right = 0.463989
+margin_bottom = 0.0239983
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "Responsabil"
+
+[node name="titlu3" type="Label" parent="Panel"]
+anchor_left = 0.413
+anchor_top = 0.276
+anchor_right = 0.533
+anchor_bottom = 0.343
+margin_left = -0.304016
+margin_top = -0.0640106
+margin_right = -0.264038
+margin_bottom = -0.152008
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 7 )
+text = "Delegat"
+
+[node name="name" type="Label" parent="Panel"]
+anchor_left = 0.016
+anchor_top = 0.103
+anchor_right = 0.349
+anchor_bottom = 0.155
+margin_left = -0.128
+margin_top = 0.207996
+margin_right = 0.208008
+margin_bottom = 0.0800018
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Denumire: "
+
+[node name="TextEdit" type="TextEdit" parent="Panel/name"]
+anchor_left = 0.243
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0719986
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+
+[node name="nume_res" type="Label" parent="Panel"]
+anchor_left = 0.413
+anchor_top = 0.103
+anchor_right = 0.746
+anchor_bottom = 0.155
+margin_left = -0.304016
+margin_top = 0.207996
+margin_right = 0.0319214
+margin_bottom = 0.0800018
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Nume: "
+
+[node name="TextEdit" type="TextEdit" parent="Panel/nume_res"]
+anchor_left = 0.243
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0719986
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+
+[node name="LOGO" type="Label" parent="Panel"]
+anchor_left = 0.77
+anchor_top = 0.103
+anchor_right = 0.976
+anchor_bottom = 0.155
+margin_left = -0.160034
+margin_top = 0.207996
+margin_right = 0.191956
+margin_bottom = 0.0800018
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "LOGO: "
+
+[node name="TextEdit" type="TextEdit" parent="Panel/LOGO"]
+anchor_left = 0.243
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0719986
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+
+[node name="cnp" type="Label" parent="Panel"]
+anchor_left = 0.413
+anchor_top = 0.19
+anchor_right = 0.746
+anchor_bottom = 0.241
+margin_left = -0.304016
+margin_top = -0.160004
+margin_right = 0.0319214
+margin_bottom = 0.175995
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "CNP: "
+
+[node name="TextEdit" type="TextEdit" parent="Panel/cnp"]
+anchor_left = 0.243
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0719986
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+
+[node name="nume_del" type="Label" parent="Panel"]
+anchor_left = 0.413
+anchor_top = 0.379
+anchor_right = 0.746
+anchor_bottom = 0.431
+margin_left = -0.304016
+margin_top = 0.143997
+margin_right = 0.0319214
+margin_bottom = 0.0159912
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Nume: "
+
+[node name="TextEdit" type="TextEdit" parent="Panel/nume_del"]
+anchor_left = 0.243
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0719986
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+
+[node name="CI" type="Label" parent="Panel"]
+anchor_left = 0.413
+anchor_top = 0.466
+anchor_right = 0.746
+anchor_bottom = 0.517
+margin_left = -0.304016
+margin_top = -0.224014
+margin_right = 0.0319214
+margin_bottom = 0.111984
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Carte identitate:"
+
+[node name="TextEdit" type="TextEdit" parent="Panel/CI"]
+anchor_left = 0.381
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.0160065
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+
+[node name="auto" type="Label" parent="Panel"]
+anchor_left = 0.413
+anchor_top = 0.552
+anchor_right = 0.746
+anchor_bottom = 0.603
+margin_left = -0.304016
+margin_top = -0.128021
+margin_right = 0.0319214
+margin_bottom = 0.207977
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "AUTO:: "
+
+[node name="TextEdit" type="TextEdit" parent="Panel/auto"]
+anchor_left = 0.243
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0719986
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+
+[node name="agent" type="Label" parent="Panel"]
+anchor_left = 0.413
+anchor_top = 0.638
+anchor_right = 0.746
+anchor_bottom = 0.69
+margin_left = -0.304016
+margin_top = -0.0320129
+margin_right = 0.0319214
+margin_bottom = -0.160034
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Agent Vânzări: "
+
+[node name="TextEdit" type="TextEdit" parent="Panel/agent"]
+anchor_left = 0.333
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.112
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+
+[node name="capital" type="Label" parent="Panel"]
+anchor_left = 0.016
+anchor_top = 0.914
+anchor_right = 0.349
+anchor_bottom = 0.966
+margin_left = -0.128
+margin_top = -0.0960083
+margin_right = 0.208008
+margin_bottom = -0.223999
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Capital social:"
+
+[node name="TextEdit" type="TextEdit" parent="Panel/capital"]
+anchor_left = 0.333
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.112
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+
+[node name="EMAIL" type="Label" parent="Panel"]
+anchor_left = 0.016
+anchor_top = 0.845
+anchor_right = 0.349
+anchor_bottom = 0.897
+margin_left = -0.128
+margin_top = -0.0800171
+margin_right = 0.208008
+margin_bottom = -0.208008
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "E-Mail: "
+
+[node name="TextEdit" type="TextEdit" parent="Panel/EMAIL"]
+anchor_left = 0.243
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0719986
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+
+[node name="telefon" type="Label" parent="Panel"]
+anchor_left = 0.016
+anchor_top = 0.776
+anchor_right = 0.349
+anchor_bottom = 0.828
+margin_left = -0.128
+margin_top = -0.0640259
+margin_right = 0.208008
+margin_bottom = -0.192017
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Telefon:"
+
+[node name="TextEdit" type="TextEdit" parent="Panel/telefon"]
+anchor_left = 0.243
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0719986
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+
+[node name="swift" type="Label" parent="Panel"]
+anchor_left = 0.222
+anchor_top = 0.707
+anchor_right = 0.349
+anchor_bottom = 0.759
+margin_left = 0.223984
+margin_top = -0.0480042
+margin_right = 0.208008
+margin_bottom = -0.176025
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "SWIFT:"
+
+[node name="TextEdit" type="TextEdit" parent="Panel/swift"]
+anchor_left = 0.437
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0639992
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+
+[node name="BANCA" type="Label" parent="Panel"]
+anchor_left = 0.016
+anchor_top = 0.707
+anchor_right = 0.214
+anchor_bottom = 0.759
+margin_left = -0.128
+margin_top = -0.0480042
+margin_right = 0.287979
+margin_bottom = -0.176025
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Bancă:"
+
+[node name="TextEdit" type="TextEdit" parent="Panel/BANCA"]
+anchor_left = 0.243
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0719986
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+
+[node name="IBAN" type="Label" parent="Panel"]
+anchor_left = 0.016
+anchor_top = 0.621
+anchor_right = 0.349
+anchor_bottom = 0.672
+margin_left = -0.128
+margin_top = -0.144012
+margin_right = 0.208008
+margin_bottom = 0.191986
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "IBAN: "
+
+[node name="TextEdit" type="TextEdit" parent="Panel/IBAN"]
+anchor_left = 0.243
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0719986
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+
+[node name="adresa" type="Label" parent="Panel"]
+anchor_left = 0.016
+anchor_top = 0.362
+anchor_right = 0.349
+anchor_bottom = 0.586
+margin_left = -0.128
+margin_top = 0.0319977
+margin_right = 0.208008
+margin_bottom = 0.0959778
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Adresa completă: "
+
+[node name="TextEdit" type="TextEdit" parent="Panel/adresa"]
+anchor_left = 0.405
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -0.0800171
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+
+[node name="REG_COM" type="Label" parent="Panel"]
+anchor_left = 0.016
+anchor_top = 0.19
+anchor_right = 0.349
+anchor_bottom = 0.241
+margin_left = -0.128
+margin_top = -0.160004
+margin_right = 0.208008
+margin_bottom = 0.175995
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "Registrul comerțului:"
+
+[node name="TextEdit" type="TextEdit" parent="Panel/REG_COM"]
+anchor_left = 0.476
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0639954
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+
+[node name="CUI" type="Label" parent="Panel"]
+anchor_left = 0.016
+anchor_top = 0.276
+anchor_right = 0.349
+anchor_bottom = 0.328
+margin_left = -0.128
+margin_top = -0.0640106
+margin_right = 0.208008
+margin_bottom = -0.192001
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 8 )
+text = "CUI:"
+
+[node name="TextEdit" type="TextEdit" parent="Panel/CUI"]
+anchor_left = 0.476
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 0.0639954
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 9 )
+custom_styles/normal = SubResource( 10 )
+
+[node name="Button" type="Button" parent="Panel"]
+anchor_left = 0.73
+anchor_top = 0.81
+anchor_right = 0.968
+anchor_bottom = 0.94
+margin_top = 0.159973
+margin_right = 0.25592
+margin_bottom = -0.160034
+custom_fonts/font = SubResource( 11 )
+custom_styles/hover = SubResource( 12 )
+custom_styles/pressed = SubResource( 13 )
+custom_styles/normal = SubResource( 14 )
+text = "SALVEAZĂ"
+
+[connection signal="pressed" from="Buttons/Panel/facturare" to="." method="_on_facturare_pressed"]
+[connection signal="pressed" from="Buttons/Panel/stocuri" to="." method="_on_stocuri_pressed"]
+[connection signal="pressed" from="Buttons/Panel/setari" to="." method="_on_setari_pressed"]
+[connection signal="pressed" from="Panel/Button" to="." method="_on_Button_pressed"]
